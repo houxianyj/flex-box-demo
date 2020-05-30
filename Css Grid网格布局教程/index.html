@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h2>一、概述</h2> <br>
+    网格布局（Grid）是最强大的 CSS 布局方案。 <br>
+<p>
+    它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。
+    <img src="1.png" alt="">
+</p>
+<p>上图这样的布局，就是 Grid 布局的拿手好戏。</p>
+
+<p>Grid 布局与 <a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html">Flex 布局</a>有一定的相似性，都可以指定容器内部多个项目的位置。但是，它们也存在重大区别。</p>
+
+<p>Flex 布局是轴线布局，只能指定"项目"针对轴线的位置，可以看作是<strong>一维布局</strong>。Grid 布局则是将容器划分成"行"和"列"，产生单元格，然后指定"项目所在"的单元格，可以看作是<strong>二维布局</strong>。Grid 布局远比 Flex 布局强大。</p>
+
+
+<h2>二、基本概念</h2>
+<p>学习 Grid 布局之前，需要了解一些基本概念。</p>
+
+
+<h3>2.1 容器和项目</h3>
+<p>采用网格布局的区域，称为"容器"（container）。容器内部采用网格定位的子元素，称为"项目"（item）。</p>
+
+<xmp>
+    <div>
+        <div><p>1</p></div>
+        <div><p>2</p></div>
+        <div><p>3</p></div>
+    </div>
+</xmp>
+
+<p>
+    上面代码中，最外层的< div >元素就是容器，内层的三个< div >元素就是项目。 <br>
+
+    注意：项目只能是容器的顶层子元素，不包含项目的子元素，比如上面代码的< p >元素就不是项目。Grid 布局只对项目生效。
+</p>
+
+
+</body>
+</html>
+<style>
+
+</style>
