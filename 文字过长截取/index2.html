@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .listItem{ overflow: hidden; width: 100%; padding: 0.8rem; box-sizing: border-box; border-bottom: 1px solid #e5e5e5; display: flex;}
+        .listItem .pic{ flex: 0 0 3rem; height: 3rem; overflow: hidden; border-radius: 50%; background-color: #999}
+        /*.listpage .listItem .pic img{ display: block; width: 100%; height: 100%;}*/
+        .listItem .info{ flex: 1; margin: 0 0.8rem;}
+        .listItem .name{ font-size: 0.8rem; color: #333;}
+        .listItem .desc{ width: 100%; font-size: 0.7rem; color: #666; line-height: 1rem; height: 1rem; margin: 0.25rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis}
+        .listItem .time{ font-size: 0.7rem; color: #999;}
+        .listItem .btnbox{ flex: 0 0 2.5rem;}
+        .listItem .btnbox .btn{ width: 100%; height: 1.5rem; text-align: center; background-color: #999; border-radius: 4px; line-height: 1.5rem; color: #fff; position: relative; top: 50%; transform: translateY(-50%)}
+        .listItem.active .btnbox .btn{ background-color: forestgreen;}
+    </style>
+</head>
+<body>
+<div class="listItem">
+    <div class="pic"><img src="1.jfif"></div>
+    <div class="info">
+        <div class="name">通天大补丸</div>
+        <div class="desc">活血化瘀，美容养颜，延缓衰老，抗风抗压....</div>
+        <div class="time">截止日期：2018-12-12</div>
+    </div>
+    <div class="btnbox">
+        <div class="btn">兑换</div>
+    </div>
+</div>
+</body>
+</html>
+
