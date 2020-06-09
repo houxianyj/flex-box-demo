@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="https://blog.csdn.net/tangran0526/article/details/103315302" target="_blank">文章</a>
+<p>解决方法 <br>
+    先说解决方法： 给 .box 添加 min-width:0;</p>
+<div style="display: inline-flex;align-items: center">
+	<div>123132</div>
+	<div id="container">
+		<span class="box">
+			<p>box1</p>
+		</span>
+		<span class="box">
+<!--			box222222222222222222 这个会无效-->
+			<p>box222222222222222222</p>
+		</span>
+	</div>
+</div>
+</body>
+</html>
+<style>
+    #container {
+        display: flex;
+        width: 300px;
+        outline: 1px solid #aaa;
+    }
+    .box {
+        flex: 0 0 150px;
+        outline: 1px solid lightpink;
+        min-width:0;
+    }
+    /* 单行显示，溢出显示。。。 */
+    .box p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+	.box div {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+</style>
