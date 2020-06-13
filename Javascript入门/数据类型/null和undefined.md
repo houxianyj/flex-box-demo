@@ -1,23 +1,22 @@
-## null与undefined都可以表示“没有”，含义非常相似。
+###null与undefined都可以表示“没有”，含义非常相似。
 ### 将一个变量赋值为undefined或null，老实说，语法效果几乎没区别。
-```js
-var a = undefined;
-// 或者
-var a = null;
-```
-	
+
+    var a = undefined;
+    // 或者
+    var a = null;
+        
 **在if语句中，它们都会被自动转为false，相等运算符（ == ）甚至直接报告两者相等**
 
 
 
-### 既然含义与用法都差不多，为什么要同时设置两个这样的值，这不是无端增加复杂度，令初学者困扰吗？这与历史原因有关
+既然含义与用法都差不多，为什么要同时设置两个这样的值，这不是无端增加复杂度，令初学者困扰吗？这与历史原因有关
 
 
-&#160; &#160; &#160; &#160;首先，第一版的 JavaScript 里面，null就像在 Java 里一样，
+> 首先，第一版的 JavaScript 里面，null就像在 Java 里一样，
 被当成一个对象，Brendan Eich 觉得表示“无”的值最好不是对象。
 其次，那时的 JavaScript 不包括错误处理机制，Brendan Eich 觉得，如果null自动转为0，很不容易发现错误。
 
-因此，他又设计了一个undefined。区别是这样的：null是一个表示“空”的对象，
+> 因此，他又设计了一个undefined。区别是这样的：null是一个表示“空”的对象，
 转为数值时为0；undefined是一个表示"此处无定义"的原始值，转为数值时为NaN。
 
 	
@@ -75,13 +74,12 @@ f() // undefined
 如果 JavaScript 预期某个位置应该是布尔值，会将该位置上现有的值自动转为布尔值。
 转换规则是除了下面六个值被转为false，其他值都视为true
 	
-```js
-undefined
-null
-false
-0
-NaN
-""或''（空字符串）
-```
+    undefined
+    null
+    false
+    0
+    NaN
+    ""或''（空字符串）
+
 **注意**
 * **空数组（[]）和空对象（{}）对应的布尔值，都是true**
