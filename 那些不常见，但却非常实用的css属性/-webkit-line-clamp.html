@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p>
+    可以把 块容器 中的内容限制为指定的行数。并且在超过行数后，在最后一行显示"..." <br><br>
+    这是正常的展示
+</p>
+
+<div class="wh">
+    How do i manage verified tables and mapping tables when i need to verify the fields my upload data or do tables mapping?
+</div>
+
+<p></p>
+<xmp>
+display: -webkit-box; /*值必须为-webkit-box或者-webkit-inline-box*/
+-webkit-box-orient: vertical; /*值必须为vertical*/
+-webkit-line-clamp: 2; /*值为数字，表示一共显示几行*/
+overflow: hidden;
+</xmp>
+
+<div class="wh webkit-line-clamp">
+    How do i manage verified tables and mapping tables when i need to verify the fields my upload data or do tables mapping?
+</div>
+
+</body>
+</html>
+<style>
+    .wh {
+        width: 200px;
+    }
+
+    .webkit-line-clamp{
+        display: -webkit-box; /*值必须为-webkit-box或者-webkit-inline-box*/
+        -webkit-box-orient: vertical; /*值必须为vertical*/
+        -webkit-line-clamp: 1; /*值为数字，表示一共显示几行*/
+        overflow: hidden;
+    }
+</style>
